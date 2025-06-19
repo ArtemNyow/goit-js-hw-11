@@ -1,3 +1,58 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+
+}
+
+.container {
+  padding: 0 156px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background: #4e75ff;
+  line-height: 1.5;
+  color: #fff;
+  border: none;
+}
+
+.load-more {
+  margin: 32px auto 44px auto;
+
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 36px;
+  margin-bottom: 32px;
+}
+
+input {
+  width: 272px;
+  height: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 8px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #808080;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #808080;
+  padding-left: 16px;
+
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -9,7 +64,6 @@
 
 .gallery-item {
   background-color: #fff;
-  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -79,9 +133,7 @@
   animation-direction: reverse;
 }
 
-.loader.hidden {
-  display: none;
-}
+
 
 @keyframes spin {
   0% {
@@ -93,7 +145,13 @@
   }
 }
 
-.form {
+
+
+.load-more {
   display: flex;
   justify-content: center;
+}
+
+.hidden {
+  display: none;
 }
